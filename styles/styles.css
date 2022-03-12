@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: #e0e8ff;
+  font-family: "Red Hat Display", sans-serif;
+}
+
+body main {
+  font-size: 16px;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main h1 {
+  color: #1f2f56;
+  font-weight: bold;
+}
+
+body main p {
+  color: #7280a7;
+}
+
+body main .card {
+  background-color: #ffffff;
+  text-align: center;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 30px 15px rgba(163, 165, 245, 0.36);
+          box-shadow: 0 30px 15px rgba(163, 165, 245, 0.36);
+}
+
+body main .card__image {
+  border-radius: 20px 20px 0px 0px;
+}
+
+body main .card__description {
+  width: 450px;
+}
+
+body main .card__description__text {
+  margin-top: 30px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+body main .card__description__text p {
+  line-height: 150%;
+  padding-top: 5px;
+}
+
+body main .card__subscription {
+  border-radius: 10px;
+  margin: 20px 50px;
+  padding: 25px;
+  background-color: #f5f7ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+body main .card__subscription__icon {
+  margin-right: 20px;
+}
+
+body main .card__subscription__text {
+  margin-right: 90px;
+}
+
+body main .card__subscription__text h4 {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
+body main .card__subscription__text p {
+  margin-bottom: 0;
+  margin-top: 0;
+  color: #7280a7;
+}
+
+body main .card__subscription__link {
+  color: #3829e0;
+  font-weight: bold;
+}
+
+body main .card__subscription__link:hover, body main .card__subscription__link:focus {
+  color: #665cd6;
+}
+
+body main .card__button button {
+  border: 1px solid #7280a7;
+  padding: 1px 100px;
+  border-radius: 10px;
+  margin: 10px 50px;
+  background-color: #3829e0;
+  font-weight: 800;
+  -webkit-box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.19);
+          box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.19);
+  cursor: pointer;
+}
+
+body main .card__button button:hover {
+  background-color: #665cd6;
+  border: 1px solid #7280a7;
+}
+
+body main .card__button__proceed {
+  color: #f5f7ff;
+}
+
+body main .card__button__cancel {
+  font-weight: 800;
+  padding-top: 20px;
+  margin: 0px 20px 40px;
+  color: #7280a7;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body main .card__button__cancel:hover {
+  color: #1f2f56;
+}
+/*# sourceMappingURL=styles.css.map */

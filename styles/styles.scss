@@ -1,0 +1,144 @@
+// Scss Variables
+$font-stack: "Red Hat Display", sans-serif;
+$font-size: 16px;
+$mobile-width: 375px;
+$desktop-width: 1440px;
+
+$primary-color-pale: hsl(225, 100%, 94%); // primary-color-100
+$primary-color-link: hsl(245, 60%, 60%); // primary-color-300
+$primary-color-bright: hsl(245, 75%, 52%); // primary-color-900
+
+$neutral-color-pale: hsl(225, 100%, 98%);
+$neutral-color-desaturated: hsl(224, 23%, 55%);
+$neutral-color-dark: hsl(223, 47%, 23%);
+
+body {
+  margin: 0;
+  background-image: url(images/pattern-background-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-color: $primary-color-pale;
+  font-family: $font-stack;
+
+  main {
+    font-size: $font-size;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1 {
+      color: $neutral-color-dark;
+      font-weight: bold;
+    }
+
+    p {
+      color: $neutral-color-desaturated;
+    }
+
+    .card {
+      background-color: #ffffff;
+      text-align: center;
+      border-radius: 20px;
+      box-shadow: 0 30px 15px hsla(239deg, 80%, 80%, 0.36);
+
+      &__image {
+        border-radius: 20px 20px 0px 0px;
+      }
+
+      &__description {
+        width: 450px;
+
+        &__text {
+          margin-top: 30px;
+          width: 300px;
+          margin: 0 auto;
+
+          p {
+            line-height: 150%;
+            padding-top: 5px;
+          }
+        }
+      }
+
+      &__subscription {
+        border-radius: 10px;
+        margin: 20px 50px;
+        padding: 25px;
+        background-color: $neutral-color-pale;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+
+        &__icon {
+          margin-right: 20px;
+        }
+
+        &__text {
+          margin-right: 90px;
+
+          h4 {
+            margin-bottom: 5px;
+            margin-top: 0;
+          }
+
+          p {
+            margin-bottom: 0;
+            margin-top: 0;
+            color: $neutral-color-desaturated;
+          }
+        }
+
+        &__link {
+          color: $primary-color-bright;
+          font-weight: bold;
+
+          &:hover,
+          &:focus {
+            color: $primary-color-link;
+          }
+        }
+      }
+
+      &__button {
+        button {
+          border: 1px solid $neutral-color-desaturated;
+          padding: 1px 100px;
+          border-radius: 10px;
+          margin: 10px 50px;
+          background-color: $primary-color-bright;
+          font-weight: 800;
+          box-shadow: 0px 20px 20px rgba(56, 42, 225, 0.19);
+          cursor: pointer;
+
+          &:hover {
+            background-color: $primary-color-link;
+            border: 1px solid $neutral-color-desaturated;
+          }
+        }
+
+        &__proceed {
+          color: hsl(225, 100%, 98%);
+        }
+
+        &__cancel {
+          font-weight: 800;
+          padding-top: 20px;
+          margin: 0px 20px 40px;
+          color: $neutral-color-desaturated;
+          border: none;
+          background-color: transparent;
+          cursor: pointer;
+
+          &:hover {
+            color: $neutral-color-dark;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
